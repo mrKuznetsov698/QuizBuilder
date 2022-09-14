@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QB | Библиотека</title>
+        <meta charset="utf-8">
+        <link href="/static/css/libst.css" rel="stylesheet">
+        <link href="/static/images/favicons.ico" rel="icon">
+    </head>
+    <body>
+        <header class="hes">
+
+            <div class="mainlogo">
+                <h1 class="logo">Quiz</h1>
+                <h1 class="logoru">Builder</h1>
+            </div>
+
+            <div class="menu">
+                <a class="point" href="inrob.html">Библиотека</a>
+                <a class="point" href="inrob.html#bioj">Создать</a>
+                <a class="point" href="www.inrob.ru"><p>INROB</p>
+                    <p class="log">.RU</p></a>
+            </div>
+
+        </header>
+
+        <div class="lib">
+            <h2 class="minititle1">Библиотека</h2>
+
+            {% for i in library %}
+                <div class="new">
+                    <div class="iconq">
+                        <h1 class="ico1">Q</h1>
+                        <h1 class="ico2">B</h1>
+                    </div>
+                    <h3 class="mnt">{{ escape(i.title) }}</h3>
+                    <img class="start_button" src="/static/images/play.png">
+                </div>
+            {% end %}
+<!--            <div class="new">-->
+<!--                <div class="iconq">-->
+<!--                    <h1 class="ico1">Q</h1>-->
+<!--                    <h1 class="ico2">B</h1>-->
+<!--                </div>-->
+<!--                <h3 class="mnt">Тест по алгебре</h3>-->
+<!--                <img class="start_button" src="/static/images/play.png">-->
+<!--            </div>-->
+<!--            <div class="new">-->
+<!--                <div class="iconq">-->
+<!--                    <h1 class="ico1">Q</h1>-->
+<!--                    <h1 class="ico2">B</h1>-->
+<!--                </div>-->
+<!--                <h3 class="mnt">Тест по геометрии</h3>-->
+<!--                <img class="start_button" src="/static/images/play.png">-->
+<!--            </div>-->
+
+<!--            <div class="new">-->
+<!--                <div class="iconq">-->
+<!--                    <h1 class="ico1">Q</h1>-->
+<!--                    <h1 class="ico2">B</h1>-->
+<!--                </div>-->
+<!--                <h3 class="mnt">Тест по информатике</h3>-->
+<!--                <img class="start_button" src="/static/images/play.png">-->
+<!--            </div>-->
+
+<!--            <div class="new">-->
+<!--                <div class="iconq">-->
+<!--                    <h1 class="ico1">Q</h1>-->
+<!--                    <h1 class="ico2">B</h1>-->
+<!--                </div>-->
+<!--                <h3 class="mnt">Тест по русскому</h3>-->
+<!--                <img class="start_button" src="/static/images/play.png">-->
+<!--            </div>-->
+
+            <footer>
+                <p class="fotg">Made by Misha and Arsenii</p>
+<!--                <p class="fotC">Terms of Use Privacy Policy PolicyCareers © QuizBuilder. All Rights Reserved. INROB's-->
+<!--                    project.</p>-->
+            </footer>
+        </div>
+    </body>
+</html>

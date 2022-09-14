@@ -1,0 +1,2 @@
+peewee==3.15.2
+tornado==6.2
