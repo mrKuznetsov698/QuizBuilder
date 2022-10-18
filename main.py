@@ -5,7 +5,7 @@ from ModelsUI import *
 
 class LibraryRender(tornado.web.RequestHandler):
     def get(self):
-        self.render('templates/index.html', library=get_all_info())
+        self.render('static/html/index.html', library=get_all_info())
 
 
 def create_app() -> tornado.web.Application:
